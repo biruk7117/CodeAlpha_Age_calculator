@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <div class="calculator-UI">
+        <h2>Age Calculator</h2>
+        
+        <div class="calculator-container">
+            <h4>Enter your birthday</h4>
+            <div class="calculator-input">
+                <div class="input-container">
+                    <label for="month">Month</label>
+                    <div>
+                        <select id="month" required>
+                            <option value="" disabled selected>Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="day">Day</label>
+                    <div>
+                        <input type="tel" id="day" placeholder="DD" minlength="1" maxlength="2" min="1" max="31" required>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="year">Year</label>
+                    <div>
+                        <input type="tel" id="year" placeholder="YYYY" minlength="4" maxlength="4" required>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input type="date" name="fullYear" id="fullYear">
+                </div>
+            </div>
+        
+            <div class="error-messages">
+                <p id="error-month"></p>
+                <p id="error-day"></p>
+                <p id="error-year"></p>
+            </div>
+            <div class="outputButton">
+               
+                <button id="button">Calculate Age</button>
+            </div>
+            <div class="calculator-output"> 
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="js/script.js"></script>
+</body>
+</html>
